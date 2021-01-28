@@ -132,6 +132,11 @@ ziuz_tof: TARGET = attiny3217
 ziuz_tof:
 	$(MAKE) -f $(MF) optiboot_ziuz_tof.hex UARTTX=B2 TIMEOUT=8 LED=C1
 
+HELPTEXT += "Ziuz TOF sensor, serial on B2, LED on C1, timout 8 seconds"
+ziuz_tof_1617: TARGET = attiny1617
+ziuz_tof_1617:
+	$(MAKE) -f $(MF) optiboot_ziuz_tof_1617.hex UARTTX=B2 TIMEOUT=8 LED=C1
+
 #HELPTEXT += "target drazzy*4      - Dr Azzy's 14pin dev boards.\n"
 #tinyxy4: TARGET = attiny1614
 #tinyxy4:
@@ -142,10 +147,11 @@ ziuz_tof:
 #tinyxy6:
 #	$(MAKE) -f $(MF) optiboot_txy6.hex UARTTX=B2 TIMEOUT=8 LED=A7
 
-#HELPTEXT += "target drazzy*7      - Dr Azzy's 24pin dev boards.\n"
-#tinyxy7: TARGET = attiny3217
-#tinyxy7:
-#	$(MAKE) -f $(MF) optiboot_txy7.hex UARTTX=B2 TIMEOUT=8 LED=A7
+HELPTEXT += "target drazzy*7      - Dr Azzy's 24pin dev boards.\n"
+tinyxy7: TARGET = attiny3217
+tinyxy7:
+	$(MAKE) -f $(MF) optiboot_txy7.hex UARTTX=B2 TIMEOUT=8 LED=A7
+
 ## For tinyAVR 0/1-series with alternate UART port mapping
 HELPTEXT += "Generic 8 pin dev board, alt serial pins, 8 second timeout, LED on A7\n"
 tinyxy2alt: TARGET = attiny412
