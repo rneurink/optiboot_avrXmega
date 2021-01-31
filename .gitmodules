@@ -1,0 +1,3 @@
+[submodule "Arduino-avr-linux-tools"]
+	path = Arduino-avr-linux-tools
+	url = https://github.com/rneurink/Arduino-avr-linux-tools.git
