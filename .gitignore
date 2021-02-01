@@ -34,3 +34,5 @@
 *.hex
 *.elf
 *.lst
+
+/tools/avr
