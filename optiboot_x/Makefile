@@ -28,7 +28,7 @@ LDSECTIONS  = -Wl,-section-start=.text=0 \
 BAUD_RATE=115200
 
 
-TOOLROOT = ../tools/
+TOOLROOT = ../tools
 
 GCCROOT = $(TOOLROOT)/avr/bin/
 AVRDUDE_CONF = -C$(TOOLROOT)/avr/etc/avrdude.conf
