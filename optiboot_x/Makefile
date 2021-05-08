@@ -308,6 +308,11 @@ xplained817: TARGET = attiny1607
 xplained817:
 	$(MAKE) -f $(MF) optiboot_xplained817.hex UARTTX=B2 TIMEOUT=8 LED=C0 BAUD_RATE=57600
 
+HELPTEXT += "target xplained3217   - Microchip ATtiny3217 Xplained Mini.\n"
+xplained3217: TARGET = attiny3217
+xplained3217:
+	$(MAKE) -f $(MF) optiboot_xplained3217.hex UARTTX=B2 TIMEOUT=8 LED=B4
+
 HELPTEXT += "target xplained4809  - Microchip ATmega4809 Xplained Pro.\n"
 xplained4809:
 	$(MAKE) -f $(MF) optiboot_atmega4809.hex UARTTX=C0 TIMEOUT=8 LED=B5 LED_INVERT=1 BAUD_RATE=115200
