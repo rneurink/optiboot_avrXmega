@@ -36,3 +36,4 @@
 *.lst
 
 /tools/avr
+/app/BareMetal/Microchip.ATtiny_DFP.2.6.122

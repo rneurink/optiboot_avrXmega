@@ -1,1 +1,2 @@
 tools/Arduino_1.8.13_avr_linux.tar.bz2 filter=lfs diff=lfs merge=lfs -text
+app/BareMetal/Microchip.ATtiny_DFP.2.6.122.atpack filter=lfs diff=lfs merge=lfs -text
