@@ -137,6 +137,11 @@ ziuz_tof_1617: TARGET = attiny1617
 ziuz_tof_1617:
 	$(MAKE) -f $(MF) optiboot_ziuz_tof_1617.hex UARTTX=B2 TIMEOUT=8 LED=C1
 
+HELPTEXT += "Ziuz backlight driver, serial on A1, LED on C3, timout 8 seconds"
+ziuz_bld_1617: TARGET = attiny1617
+ziuz_bld_1617:
+	$(MAKE) -f $(MF) optiboot_ziuz_bld_1617.hex UARTTX=A1 TIMEOUT=8 LED=C3
+
 #HELPTEXT += "target drazzy*4      - Dr Azzy's 14pin dev boards.\n"
 #tinyxy4: TARGET = attiny1614
 #tinyxy4:
